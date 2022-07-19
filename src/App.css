@@ -1,6 +1,10 @@
+
+
+
 .App {
   display: flex;
-  height: 0 auto;
+  height: 100vh;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
@@ -8,15 +12,48 @@
 
 .container {
   display:flex;
-  width: 500px;
-  height: 0 auto;
+  background-color: whitesmoke;
+  width: fit-content;
+  height: auto;
   border: 1px solid black;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
-.form-class{
-  display:flex;
-  flex-direction: column;
-  width: 50%;
+.container input{
+  width: 30rem;
 }
+
+.albums{
+  display: grid;
+  padding: 20px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.album{
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  color: white;
+  font-weight: 100;
+}
+
+.album__artwork {
+  width: 100%;
+}
+
+.mainView {
+  padding: 30px 10px 0 10px;
+}
+ 
+
+
+
+
+
+
